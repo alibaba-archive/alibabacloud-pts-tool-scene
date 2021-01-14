@@ -3,7 +3,7 @@ package com.taobao.amazon.entity.pts.scene;
 import java.util.List;
 
 /**
- * @function 场景的高级设置
+ * 场景的高级设置
  */
 public class AdvanceSetting {
 
