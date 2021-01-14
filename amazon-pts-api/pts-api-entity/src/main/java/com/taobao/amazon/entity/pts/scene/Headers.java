@@ -1,7 +1,7 @@
 package com.taobao.amazon.entity.pts.scene;
 
 /**
- * @function API的请求Header
+ * API的请求Header
  */
 public class Headers {
 
