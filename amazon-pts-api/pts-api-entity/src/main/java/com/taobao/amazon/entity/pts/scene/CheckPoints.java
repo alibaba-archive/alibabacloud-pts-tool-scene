@@ -1,7 +1,7 @@
 package com.taobao.amazon.entity.pts.scene;
 
 /**
- * @function 检查点
+ * 检查点
  */
 public class CheckPoints {
 
