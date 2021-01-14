@@ -7,26 +7,32 @@
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <name>amazon-pts-api</name>
-
+         
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
         <maven.compiler.source>1.8</maven.compiler.source>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <mockito-all.version>1.10.19</mockito-all.version>
-        <mybatis-starter.version>1.1.1</mybatis-starter.version>
-        <spring-boot.version>2.1.8.RELEASE</spring-boot.version>
-        <maven-antrun.version>1.8</maven-antrun.version>
-        <pandora-boot.version>2020-07-release</pandora-boot.version>
-        <jackson.version>2.10.1</jackson.version>
-        <pandora-boot-maven-plugin.version>2.1.14.2</pandora-boot-maven-plugin.version>
-        <velocity.starter.version>1.0.4.RELEASE</velocity.starter.version>
     </properties>
 
     <modules>
         <module>pts-api-entity</module>
     </modules>
+         
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+         
+    <developers>
+        <developer>
+            <id>aliyunproducts</id>
+            <name>Aliyun SDK</name>
+            <email>aliyunsdk@aliyun.com</email>
+        </developer>
+    </developers>
 
     <dependencyManagement>
         <dependencies>
@@ -34,6 +40,24 @@
         </dependencies>
     </dependencyManagement>
 
+         
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com/aliyun/alibabacloud-pts-tool-scene.git</connection>
+        <developerConnection>scm:git:git@github.com:aliyun/alibabacloud-pts-tool-scene.git</developerConnection>
+        <url>https://github.com/aliyun/alibabacloud-pts-tool-scene</url>
+    </scm>
+         
     <build>
         <pluginManagement>
             <plugins>
