@@ -3,7 +3,7 @@ package com.taobao.amazon.entity.pts.scene;
 import java.util.List;
 
 /**
- * @function 场景结构
+ * 场景结构
  */
 public class Scene {
 
