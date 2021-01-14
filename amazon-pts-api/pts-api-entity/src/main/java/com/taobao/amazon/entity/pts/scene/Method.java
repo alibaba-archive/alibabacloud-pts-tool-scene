@@ -1,7 +1,7 @@
 package com.taobao.amazon.entity.pts.scene;
 
 /**
- * @function URL支持的请求方式
+ * URL支持的请求方式
  */
 public class Method {
 
