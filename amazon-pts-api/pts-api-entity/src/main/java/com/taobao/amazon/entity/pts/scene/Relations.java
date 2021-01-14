@@ -4,7 +4,7 @@ package com.taobao.amazon.entity.pts.scene;
 import java.util.List;
 
 /**
- * @function 场景的链路结构
+ * 场景的链路结构
  */
 public class Relations {
 
