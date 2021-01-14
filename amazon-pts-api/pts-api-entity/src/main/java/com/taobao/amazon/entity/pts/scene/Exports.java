@@ -1,7 +1,7 @@
 package com.taobao.amazon.entity.pts.scene;
 
 /**
- * @function API的出参类
+ * API的出参类
  */
 public class Exports {
 
