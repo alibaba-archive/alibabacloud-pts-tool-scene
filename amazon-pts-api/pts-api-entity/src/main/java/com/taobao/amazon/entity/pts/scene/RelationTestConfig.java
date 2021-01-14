@@ -2,7 +2,7 @@ package com.taobao.amazon.entity.pts.scene;
 
 
 /**
- * @function 链路施压配置信息，在并发模式下使用
+ * 链路施压配置信息，在并发模式下使用
  */
 public class RelationTestConfig {
 
