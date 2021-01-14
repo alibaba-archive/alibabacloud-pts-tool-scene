@@ -3,7 +3,7 @@ package com.taobao.amazon.entity.pts.scene;
 import java.util.List;
 
 /**
- * @function 域名与IP绑定关系
+ * 域名与IP绑定关系
  */
 public class DomainBinding {
 
