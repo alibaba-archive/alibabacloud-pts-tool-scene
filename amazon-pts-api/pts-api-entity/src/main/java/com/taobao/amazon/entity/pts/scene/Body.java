@@ -1,7 +1,7 @@
 package com.taobao.amazon.entity.pts.scene;
 
 /**
- * @function API的请求body
+ * API的请求body
  */
 public class Body {
 
