@@ -2,7 +2,7 @@ package com.taobao.amazon.entity.pts.scene;
 
 
 /**
- * @function 场景施压配置信息
+ * 场景施压配置信息
  */
 public class SceneTestConfig {
 
