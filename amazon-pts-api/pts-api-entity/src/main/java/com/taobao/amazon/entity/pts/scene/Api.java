@@ -3,7 +3,7 @@ package com.taobao.amazon.entity.pts.scene;
 import java.util.List;
 
 /**
- * @function API结构
+ * API结构
  */
 public class Api {
 
