@@ -8,7 +8,7 @@ public class Body {
     /**
      * body 类型，默认 application/x-www-form-urlencoded
      */
-    private String bodyType;
+    private String contentType;
 
     /**
      * body 的实际内容 形式 {"key1":"value2","key2":"value2"}
@@ -19,12 +19,12 @@ public class Body {
     public Body() {
     }
 
-    public String getBodyType() {
-        return bodyType;
+    public String getContentType() {
+        return contentType;
     }
 
-    public void setBodyType(String bodyType) {
-        this.bodyType = bodyType;
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
     }
 
     public String getBodyValue() {
@@ -38,7 +38,7 @@ public class Body {
     @Override
     public String toString() {
         return "Body{" +
-                "bodyType='" + bodyType + '\'' +
+                "contentType='" + contentType + '\'' +
                 ", bodyValue='" + bodyValue + '\'' +
                 '}';
     }

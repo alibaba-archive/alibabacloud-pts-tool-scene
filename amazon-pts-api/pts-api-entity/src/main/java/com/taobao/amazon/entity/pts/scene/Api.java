@@ -8,6 +8,11 @@ import java.util.List;
 public class Api {
 
     /**
+     * API的ID
+     */
+    private String apiId;
+
+    /**
      * API名
      */
     private String apiName;
@@ -33,16 +38,6 @@ public class Api {
     private Integer timeoutInSecond;
 
     /**
-     * 起始RPS，RPS模式必须配置，并发模式不用配置
-     */
-    private Integer beginRps;
-
-    /**
-     * 最大RPS，RPS模式必须配置，并发模式不用配置
-     */
-    private Integer maxRps;
-
-    /**
      * 重定向次数
      */
     private Integer redirectCountLimit;
@@ -50,17 +45,17 @@ public class Api {
     /**
      * header
      */
-    private List<Headers> headerList;
+    private List<Header> headerList;
 
     /**
      * 出参
      */
-    private List<Exports> exportsList;
+    private List<Export> exportList;
 
     /**
      * 检查点
      */
-    private List<CheckPoints> checkPointsList;
+    private List<CheckPoint> checkPointList;
 
 
     public Api() {
@@ -106,22 +101,6 @@ public class Api {
         this.timeoutInSecond = timeoutInSecond;
     }
 
-    public Integer getBeginRps() {
-        return beginRps;
-    }
-
-    public void setBeginRps(Integer beginRps) {
-        this.beginRps = beginRps;
-    }
-
-    public Integer getMaxRps() {
-        return maxRps;
-    }
-
-    public void setMaxRps(Integer maxRps) {
-        this.maxRps = maxRps;
-    }
-
     public Integer getRedirectCountLimit() {
         return redirectCountLimit;
     }
@@ -130,44 +109,51 @@ public class Api {
         this.redirectCountLimit = redirectCountLimit;
     }
 
-    public List<Headers> getHeaderList() {
+    public List<Header> getHeaderList() {
         return headerList;
     }
 
-    public void setHeaderList(List<Headers> headerList) {
+    public void setHeaderList(List<Header> headerList) {
         this.headerList = headerList;
     }
 
-    public List<Exports> getExportsList() {
-        return exportsList;
+    public String getApiId() {
+        return apiId;
     }
 
-    public void setExportsList(List<Exports> exportsList) {
-        this.exportsList = exportsList;
+    public void setApiId(String apiId) {
+        this.apiId = apiId;
     }
 
-    public List<CheckPoints> getCheckPointsList() {
-        return checkPointsList;
+    public List<Export> getExportList() {
+        return exportList;
     }
 
-    public void setCheckPointsList(List<CheckPoints> checkPointsList) {
-        this.checkPointsList = checkPointsList;
+    public void setExportList(List<Export> exportList) {
+        this.exportList = exportList;
+    }
+
+    public List<CheckPoint> getCheckPointList() {
+        return checkPointList;
+    }
+
+    public void setCheckPointList(List<CheckPoint> checkPointList) {
+        this.checkPointList = checkPointList;
     }
 
     @Override
     public String toString() {
         return "Api{" +
-                "apiName='" + apiName + '\'' +
+                "apiId='" + apiId + '\'' +
+                ", apiName='" + apiName + '\'' +
                 ", url='" + url + '\'' +
                 ", method='" + method + '\'' +
                 ", body=" + body +
                 ", timeoutInSecond=" + timeoutInSecond +
-                ", beginRps=" + beginRps +
-                ", maxRps=" + maxRps +
                 ", redirectCountLimit=" + redirectCountLimit +
                 ", headerList=" + headerList +
-                ", exportsList=" + exportsList +
-                ", checkPointsList=" + checkPointsList +
+                ", exportList=" + exportList +
+                ", checkPointList=" + checkPointList +
                 '}';
     }
 }
