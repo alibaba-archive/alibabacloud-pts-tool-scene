@@ -1,0 +1,12 @@
+com/taobao/amazon/entity/pts/scene/SceneTestConfig.class
+com/taobao/amazon/entity/pts/scene/CheckPointOperator.class
+com/taobao/amazon/entity/pts/scene/CheckPoints.class
+com/taobao/amazon/entity/pts/scene/Headers.class
+com/taobao/amazon/entity/pts/scene/AdvanceSetting.class
+com/taobao/amazon/entity/pts/scene/DomainBinding.class
+com/taobao/amazon/entity/pts/scene/Api.class
+com/taobao/amazon/entity/pts/scene/Scene.class
+com/taobao/amazon/entity/pts/scene/RelationTestConfig.class
+com/taobao/amazon/entity/pts/scene/Exports.class
+com/taobao/amazon/entity/pts/scene/Body.class
+com/taobao/amazon/entity/pts/scene/Relations.class
