@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aliyun</groupId>
     <artifactId>amazon-pts-api</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>1.0.0</version>
     <name>amazon-pts-api</name>
 
@@ -59,16 +59,6 @@
     <build>
         <pluginManagement>
             <plugins>
-                <plugin>
-                    <artifactId>maven-antrun-plugin</artifactId>
-                    <version>${maven-antrun.version}</version>
-                </plugin>
-
-                <plugin>
-                    <groupId>com.taobao.pandora</groupId>
-                    <artifactId>pandora-boot-maven-plugin</artifactId>
-                    <version>${pandora-boot-maven-plugin.version}</version>
-                </plugin>
 
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
