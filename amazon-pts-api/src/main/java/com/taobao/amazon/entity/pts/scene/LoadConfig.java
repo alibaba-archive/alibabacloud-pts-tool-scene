@@ -14,6 +14,22 @@ public class LoadConfig {
     private String testMode;
 
     /**
+     * 是否自动递增，只有在并发模式下有效，即 testMode=concurrency_mode 时
+     */
+    private Boolean autoStep;
+
+    /**
+     * 递增百分比，取值范围[10,100]，且是整十倍
+     * 只有在并发模式且是自动递增模式下有效，即 testMode=concurrency_mode 且 autoStep=true 时
+     */
+    private Integer increment;
+
+    /**
+     * 单量级持续时长，单位分钟，一定是小于施压时长 maxRunningTime
+     */
+    private Integer keepTime;
+
+    /**
      * 场景施压量级配置信息
      */
     private Configuration configuration;
@@ -87,6 +103,30 @@ public class LoadConfig {
 
     public void setRelationLoadConfigList(List<RelationLoadConfig> relationLoadConfigList) {
         this.relationLoadConfigList = relationLoadConfigList;
+    }
+
+    public Boolean getAutoStep() {
+        return autoStep;
+    }
+
+    public void setAutoStep(Boolean autoStep) {
+        this.autoStep = autoStep;
+    }
+
+    public Integer getIncrement() {
+        return increment;
+    }
+
+    public void setIncrement(Integer increment) {
+        this.increment = increment;
+    }
+
+    public Integer getKeepTime() {
+        return keepTime;
+    }
+
+    public void setKeepTime(Integer keepTime) {
+        this.keepTime = keepTime;
     }
 
     @Override
