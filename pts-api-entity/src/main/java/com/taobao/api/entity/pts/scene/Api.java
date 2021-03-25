@@ -38,7 +38,7 @@ public class Api {
     private Integer timeoutInSecond;
 
     /**
-     * 重定向次数
+     * 重定向次数，只能是0（允许重定向）或者10（不允许重定向）
      */
     private Integer redirectCountLimit;
 
